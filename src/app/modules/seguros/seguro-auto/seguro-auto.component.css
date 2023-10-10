@@ -1,0 +1,207 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #f1f1f1;
+}
+
+.main-image {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(https://img.freepik.com/foto-gratis/familia-nina-pequena-eligiendo-coche-sala-exposicion-coches_1303-26808.jpg?w=1060&t=st=1696843361~exp=1696843961~hmac=21b10014e17a649a1849f1755cd44cd713fea213909f1fb0ec7655da97f905d5) no-repeat center;
+    background-size: cover;
+    height: 500px;
+    overflow: hidden;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.container h1 {
+    margin: 0;
+    font-size: 66px;
+}
+
+.container h1 span {
+    /*border: 6px solid white;*/
+    padding: 6px 14px;
+    display: inline-block;
+}
+
+.cen {
+    margin: 20px;
+    display: block;
+    font-size: 22px;
+}
+
+.button {
+    color: #313131;
+    padding: 10px 24px;
+    background: #f1f1f1;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: .6s;
+}
+
+.button:hover {
+    opacity: .6;
+}
+
+img {
+    object-fit: cover;
+    width: 80%;
+    height: 80%;
+}
+
+
+.contenedor1 {
+    width: 90%;
+    text-align: center;
+}
+
+
+.contenedor_first {
+
+    border-radius: 5px;
+    border-color: #313131;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /*border: solid 1px #313131;*/
+    width: 80%;
+    margin: 0 auto;
+
+    /*border-bottom: solid 3px #0d2033;
+    line-height: 50px;*/
+
+}
+
+.contenedor_second {
+
+    border-radius: 5px;
+    border-color: #313131;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /*border: solid 1px #313131;*/
+    width: 80%;
+    margin: 0 auto;
+
+    border-bottom: solid 3px #0d2033;
+    line-height: 50px;
+
+}
+
+.texto {
+    flex: 1;
+    margin-left: 10%;
+    margin-right: 20px;
+    /* Espacio entre la imagen y el texto */
+    font-size: 16px;
+    text-align: justify;
+}
+
+/* Media query para ajustar el diseño en pantallas pequeñas */
+@media (max-width: 768px) {
+
+    .contenedor_first {
+        flex-direction: column;
+        text-align: center;
+        margin-left: 0;
+        margin: 0 auto;
+    }
+
+    .contenedor_second {
+        flex-direction: column;
+        text-align: center;
+        margin-left: 0;
+        margin: 0 auto;
+    }
+
+    .contenedor1 {
+        flex-direction: column;
+        text-align: center;
+        margin-left: 0;
+        margin: 0 auto;
+    }
+
+    .texto {
+        margin-left: 0;
+        /* Elimina el espacio entre la imagen y el texto */
+        margin-right: 0;
+        text-align: center;
+        margin-top: 20px;
+        /* Espacio entre la imagen y el texto en pantallas pequeñas */
+    }
+}
+
+.titulo_ {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 5vh;
+    font-weight: bold;
+}
+
+.subtitulo_ {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 2vh;
+    font-weight: bold;
+}
+
+p {
+    color: #575a7b;
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+}
+
+.centrar {
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+
+.centrar_medio {
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+
+}
+
+.container_border {
+
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: solid 2px #0d2033;
+
+
+}
+
+/* Estilos para la imagen */
+.imagen {
+    margin-left: 10%;
+    max-width: 50%;
+    height: auto;
+}
+
+.imagen_right {
+    margin-right: 2%;
+    max-width: 50%;
+    height: auto;
+}

@@ -1,0 +1,475 @@
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #f1f1f1;
+}
+
+.main-image {
+    position: relative;
+    background:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(https://img.freepik.com/foto-gratis/felices-padres-su-pequena-hija-tomando-selfie-telefono-movil-casa_637285-10223.jpg?w=1060&t=st=1696754019~exp=1696754619~hmac=d73df3d1ce54ef4f73d1fcae5afb32b2d467cdc914669af00c8592dd0ee15354) no-repeat center;
+    background-size: cover;
+    height: 500px;
+    overflow: hidden;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.container h1 {
+    margin: 0;
+    font-size: 66px;
+}
+
+.container h1 span {
+    /*border: 6px solid white;*/
+    padding: 6px 14px;
+    display: inline-block;
+}
+
+.cen {
+    margin: 20px;
+    display: block;
+    font-size: 22px;
+}
+
+.button {
+    color: #313131;
+    padding: 10px 24px;
+    background: #f1f1f1;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: .6s;
+}
+
+.button:hover {
+    opacity: .6;
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*font-family: sans-serif;*/
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    /*background: rgb(9, 74, 136);*/
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+}
+
+.card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.card .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px;
+}
+
+.card .front .img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .front h3 {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #ffffff;
+    background: rgba(9, 9, 9, 0.7);
+}
+
+.card .back {
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3, 35, 54);
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+
+.card .back .link {
+    border-top: solid 1px #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+}
+
+.card .back .link a {
+    color: #f3f3f3;
+}
+
+.card .back h3 {
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.card .back p {
+    letter-spacing: 1px;
+}
+
+.card:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
+
+.titulo_{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 5vh;
+    font-weight: bold;
+}
+
+.subtitulo_{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 2vh;
+    font-weight: bold;
+}
+
+
+  section {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .column {
+    width: 100%;
+    padding: 0 1em 1em 1em;
+    text-align: center;
+  }
+  .cardInfo {
+    width: 100%;
+    height: 100%;
+    padding: 2em 1.5em;
+    background: linear-gradient(#ffffff 50%, #07c 50%);
+    background-size: 100% 200%;
+    background-position: 0 2.5%;
+    border-radius: 5px;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1f194c;
+    margin: 1em 0;
+  }
+  .card_white{
+    color: #ffffff;
+  }
+  p {
+    color: #575a7b;
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+  }
+  .icon-wrapper {
+    background-color: #07c;
+    position: relative;
+    margin: auto;
+    font-size: 30px;
+    height: 2.5em;
+    width: 2.5em;
+    color: #ffffff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    transition: 0.5s;
+  }
+  .cardInfo:hover {
+    background-position: 0 100%;
+  }
+  .cardInfo:hover .icon-wrapper {
+    background-color: #ffffff;
+    color: #2c7bfe;
+  }
+  .cardInfo:hover h3 {
+    color: #ffffff;
+  }
+  .cardInfo:hover p {
+    color: #f0f0f0;
+  }
+  @media screen and (min-width: 768px) {
+    section {
+      padding: 0 2em;
+    }
+    .column {
+      flex: 0 50%;
+      max-width: 50%;
+    }
+    .separador{
+      margin-top: 30vh;
+    }
+    
+    
+  }
+  @media screen and (min-width: 992px) {
+    section {
+      padding: 1em 3em;
+    }
+    .separador{
+      margin-top: 15vh;
+    }
+    
+    .column {
+      flex: 0 0 33.33%;
+      max-width: 33.33%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .contenedor {
+        flex-direction: column;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .contenedor_first {
+        flex-direction: column;
+        text-align: center;
+        margin-left: 0;
+        margin: 0 auto;
+    }
+
+    .contenedor1{
+        flex-direction: column;
+        text-align: center;
+        margin-left: 0;
+        margin: 0 auto;
+    }
+
+    .texto {
+        margin-left: 0;
+        /* Elimina el espacio entre la imagen y el texto */
+        margin-right: 0;
+        text-align: center;
+        margin-top: 20px;
+        /* Espacio entre la imagen y el texto en pantallas pequeñas */
+    }
+}
+  /* Estilos para el contenedor principal */
+.contenedor {
+  border-radius: 15px;
+  border-color: #313131;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contenedor_first {
+
+  border-radius: 5px;
+  border-color: #313131;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  /*border: solid 1px #313131;*/
+  width: 80%;
+  margin: 0 auto;
+
+  border-bottom: solid 3px #0d2033;
+  line-height: 50px;
+
+}
+
+.c1 {
+  margin-top: 5%;
+}
+
+.imagen {
+  margin-left: 10%;
+  max-width: 50%;
+  height: auto;
+}
+
+.contenedor1{
+  width: 90%;
+  text-align: center;
+}
+
+.texto {
+  flex: 1;
+  margin-left: 10%;
+  margin-right: 20px;
+  /* Espacio entre la imagen y el texto */
+  font-size: 16px;
+  text-align: justify;
+}
+
+
+
+  .formulario {
+    min-width: 150px;
+    max-width: 500px;
+    width: 60%;
+    margin: 0 auto;
+    border: solid 2px #0d2033;
+  
+    margin-top: 5%;
+    border-radius: 15px;
+    text-align: center;
+    background-color: #213f5e;
+  }
+
+  .form-body{
+
+    margin-top: 15px;
+    width: 80%;
+    margin: 0 auto;
+
+  }
+
+  .form-header{
+    color: whitesmoke;
+
+  }
+  
+  .full-width {
+    width: 100%;
+  }
+  
+  td {
+    padding-right: 8px;
+  }
+
+  .btn_reg{
+
+    margin-bottom: 25px
+
+  }
+
+
+  .titulo_ {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 5vh;
+    font-weight: bold;
+}
+
+.subtitulo_ {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 2vh;
+    font-weight: bold;
+}
+
+p {
+    color: #575a7b;
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+}
+
+.centrar{
+    text-align: center;
+    margin: 0 auto;
+    
+}
+
+
+
+
+
+
+
+/* Media query para ajustar el diseño en pantallas pequeñas */
+@media (max-width: 768px) {
+    .contenedor {
+        flex-direction: column;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .contenedor_first {
+        flex-direction: column;
+        text-align: center;
+        margin-left: 0;
+        margin: 0 auto;
+    }
+
+    .contenedor_second {
+        flex-direction: column;
+        text-align: center;
+        margin-left: 0;
+        margin: 0 auto;
+    }
+
+    .contenedor1{
+        flex-direction: column;
+        text-align: center;
+        margin-left: 0;
+        margin: 0 auto;
+    }
+
+    .separador{
+      margin-top: 25vh;
+    }
+
+    .texto {
+        margin-left: 0;
+        /* Elimina el espacio entre la imagen y el texto */
+        margin-right: 0;
+        text-align: center;
+        margin-top: 20px;
+        /* Espacio entre la imagen y el texto en pantallas pequeñas */
+    }
+}
+

@@ -1,0 +1,21 @@
+<nav id="navegador">
+  <ul>
+    <li class="logotype">
+      <img src="../../../assets/images/logo_seguros.png" class="logo" alt="logo">
+    </li>
+    <li class="toggle" (click)="toggleMenu()">
+      <i class="material-icons">{{ isMenuOpen ? "close" : "menu" }}</i>
+    </li>
+    <li class="menu" [class.is-open]="isMenuOpen">
+      <a href="home/inicio" routerLink="/home/inicio" class="menu-item">Home</a>
+      <a href="seguros/seguro" routerLink="/seguros/seguro" class="menu-item">Seguros</a>
+      <a href="servicios/servicios" routerLink="/servicios/servicios" class="menu-item">Servicios</a>
+      <a href="nosotros/conocenos" routerLink="/nosotros/conocenos" class="menu-item">Acerca de nosotros</a>
+      <!--button mat-stroked-button (click)="logOut()" color="primary">Logout</button-->
+    </li>
+  </ul>
+</nav>
+<div [class.open]="isMenuOpen">
+<router-outlet></router-outlet>
+</div>
+

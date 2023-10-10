@@ -1,0 +1,22 @@
+
+@media screen and (max-width:800px){
+    .footer_{       
+        margin-top: 170vh;
+    
+    }
+}
+
+
+@media screen and (min-width:800px){
+    .footer_{   
+        margin-top: 50vh;
+        
+    }
+}
+
+@media screen and (min-width:1200px){
+    .footer_{
+        margin-top: 10vh;
+        
+    }
+}
